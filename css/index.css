@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: normal 1.1rem/1.5 Verdana;
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    padding-bottom: 0;
+}
+header{
+    border-bottom: 3px solid red; 
+    margin: 0 auto;
+    padding: 15px;
+    padding-bottom: 0px;
+    display: flex;
+    position: sticky;
+ 
+  
+}
+nav{
+    margin: 0 auto;
+    justify-content: space-between;
+    
+   
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+nav ul li{
+    color: black;
+    margin: 20px;
+    padding: 5px 20px;
+    font-size: 30px;
+    
+}
+.links a{
+    color: black;
+    text-decoration: none;
+}
+.links a:hover{
+     color: #d00000;
+    border-bottom: 2px solid #d00000;
+}
+.lugar{
+    color: #d00000;
+    border-bottom: 2px solid #d00000;
+}
+h1{
+    margin: 10px;
+    padding: 5px;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+
+}
+/* === SECCIÓN DE NOTICIAS === */
+.noticias {
+  padding: 80px 20px;
+
+  text-align: center;
+}
+
+.noticias h2 {
+  font-size: 2.2rem;
+  color: #fff9f9;
+  margin-bottom: 50px;
+}
+
+.noticias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.noticia {
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.noticia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.noticia img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.noticia h3 {
+  font-size: 1.2rem;
+  color: #d00000;
+  margin: 15px 10px 10px;
+}
+
+.noticia p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0 15px 15px;
+}
+
+.btn-leer {
+  display: inline-block;
+  background-color: #d00000;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 15px;
+ 
+}
+
+.btn-leer:hover {
+  background-color: #a00000;
+}
+footer{
+    background-color: #3b3939;
+    text-align: center;
+    color: black;
+
+}
+footer img{
+    margin: 10px;
+    width: 50px;
+    height: auto;
+}
+
