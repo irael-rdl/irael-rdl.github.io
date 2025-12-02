@@ -1,9 +1,11 @@
+/*--------------Toda la pagina--------------*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*--------------Fondo de pagina--------------*/
 body{
     font: normal 1.1rem/1.5 Verdana;
     background-image: url(../images/fondo.jpg);
@@ -12,6 +14,8 @@ body{
     padding: 50px 0;
     padding-bottom: 0;
 }
+
+/*--------------Barra de navegacion--------------*/
 header{
     border-bottom: 3px solid red; 
     margin: 0 auto;
@@ -63,7 +67,7 @@ h1{
   border: 1px solid black;
 
 }
-/* === SECCIÓN DE NOTICIAS === */
+/*--------------SECCIÓN DE NOTICIAS--------------*/
 .noticias {
   padding: 80px 20px;
 
@@ -129,6 +133,8 @@ h1{
 .btn-leer:hover {
   background-color: #a00000;
 }
+
+/*--------------Pie de pagina--------------*/
 footer{
     background-color: #3b3939;
     text-align: center;
@@ -139,5 +145,32 @@ footer img{
     margin: 10px;
     width: 50px;
     height: auto;
+}
+
+/*--------------Pantalla movil--------------*/
+
+@media(max-width:580px){
+  header{
+    flex-direction: column;
+  }
+  .links{
+    flex-direction: column;
+  }
+
+  main{
+    flex-direction: column;
+  }
+
+  main section article{
+    width: 95%;
+  }
+
+  main section{
+    width: 100%;
+  }
+ 
+  .logo{
+    display: none;
+  }
 }
 

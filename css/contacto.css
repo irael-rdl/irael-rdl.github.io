@@ -1,8 +1,10 @@
+/*--------------Toda la pagina--------------*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*--------------Fondo de pagina--------------*/
 body{
     font: normal 1.1rem/1.5 Verdana;
     background: radial-gradient(circle at center, #a69a9a 0%, #ffffff 100%);
@@ -11,6 +13,7 @@ body{
     padding-bottom: 0;
    
 }
+/*--------------Barra de navegacion--------------*/
 header{
     border-bottom: 3px solid red; 
     margin: 0 auto;
@@ -62,6 +65,7 @@ h1{
   border: 1px solid black;
 
 }
+/*--------------*/
 main{
     display: flex;
 }
@@ -86,6 +90,7 @@ article h2{
   margin: 10px;
   padding: 5px;
 }
+/*--------------Pie de pagina--------------*/
 footer{
     background-color: #3b3939;
     text-align: center;
@@ -96,4 +101,33 @@ footer img{
     margin: 10px;
     width: 50px;
     height: auto;
+}
+/*--------------Pantalla movil--------------*/
+@media(max-width:580px){
+  header{
+    flex-direction: column;
+  }
+  .links{
+    flex-direction: column;
+  }
+
+  main{
+    flex-direction: column;
+  }
+
+  main section article{
+    width: 95%;
+    flex-direction: column;
+  }
+
+  main section{
+    width: 100%;
+  }
+   aside{
+    width: 100%;
+  }
+
+  .logo{
+    display: none;
+  }
 }
