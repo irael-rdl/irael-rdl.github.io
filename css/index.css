@@ -4,17 +4,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+}
 
 /*--------------Fondo de pagina--------------*/
 body{
     font: normal 1.1rem/1.5 Verdana;
     background-image: url(../images/fondo.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: 120%;
     padding: 50px 0;
-    padding-bottom: 0;
 }
-
+main{
+  flex: 1;
+}
 /*--------------Barra de navegacion--------------*/
 header{
     border-bottom: 3px solid red; 
@@ -67,10 +71,10 @@ h1{
   border: 1px solid black;
 
 }
+
 /*--------------SECCIÓN DE NOTICIAS--------------*/
 .noticias {
-  padding: 80px 20px;
-
+  padding:150px 20px;
   text-align: center;
 }
 
@@ -130,10 +134,64 @@ h1{
  
 }
 
+
 .btn-leer:hover {
   background-color: #a00000;
 }
-
+/*--------------Lo mas vendido--------------*/
+ article h3{
+  padding-bottom: 10px;
+  color: #d00000;
+}
+.vendido {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 50px;
+  justify-content: center;
+}
+.cb125r{
+  width: auto;
+  height:250px;
+  object-fit: cover;
+  
+}
+.topsell{
+  display: flex;
+  color: #555;
+  
+}
+.vendido:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+/*--------------Proximamente--------------*/
+.prox{
+  padding: 10px;
+  margin: 50px;
+}
+.prox p{
+  color: #555;
+  margin: 5px;
+}
+.accesorios-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.accesorios-grid img{
+  width: auto;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.accesorios-grid img:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
 /*--------------Pie de pagina--------------*/
 footer{
     background-color: #3b3939;
@@ -144,7 +202,7 @@ footer{
 footer img{
     margin: 10px;
     width: 50px;
-    height: auto;
+    height: auto; 
 }
 
 /*--------------Pantalla movil--------------*/
@@ -167,6 +225,16 @@ footer img{
 
   main section{
     width: 100%;
+  }
+  .noticias h2{
+    color: black;
+  }
+  body{
+    background-image: none;
+  }
+  .topsell{
+     flex-direction: column;
+     width: 85%;
   }
   
   .logo{

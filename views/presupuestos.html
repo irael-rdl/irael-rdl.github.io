@@ -9,7 +9,7 @@
 <body>
       <!--Barra de navegacion-->
     <header>
-        <img src="../images/logo.png" alt="Logotipo" class="logo">
+        <img src="../images/logo.png" alt="Logotipo" class="logo" width="1024" height="1024" >
         <h1>HondaMotors</h1>
         <nav>
             <ul class="links">
@@ -30,7 +30,7 @@
                     <ul class="list1">
                         <li>
                             <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" required >
+                            <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" pattern="[a-zA-ZñÑ]{3.15}" required >
                         </li>   
                         <li>
                             <label for="email">Em@il</label>
@@ -38,7 +38,7 @@
                         </li>
                         <li>
                             <label for="telefono">Telefono</label>
-                            <input type="tel" name="telefono" id="telefono" placeholder="Escriba su numero" required>
+                            <input type="tel" name="telefono" id="telefono" placeholder="Escriba su numero" pattern="\d" required>
                         </li> 
                         <li>      
                             <label for="modelo">Elige tu Modelo</label>
@@ -57,7 +57,7 @@
                         </li>    
                         <li>
                             <label for="inforamacion">Solicita mas informacion</label>
-                            <textarea name="inforamacion" id="inforamacion" placeholder="..." required></textarea>
+                            <textarea name="inforamacion" id="inforamacion" placeholder="..."  required maxlength="300"></textarea>
                         </li>
                     </ul>
                 </fieldset>

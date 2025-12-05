@@ -4,13 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+}
+
+
 /*--------------Fondo de pagina--------------*/
 body{
     font: normal 1.1rem/1.5 Verdana;
     background: radial-gradient(circle at center, #a69a9a 0%, #ffffff 100%);
     color: rgb(5, 5, 5);
     padding: 50px 0;
-    padding-bottom: 0;
    
 }
 /*--------------Barra de navegacion--------------*/
@@ -68,6 +72,7 @@ h1{
 /*--------------*/
 main{
     display: flex;
+    flex: 1;
 }
 main aside{
   width: 25%;

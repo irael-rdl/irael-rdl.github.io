@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+}
+
 
 /*--------------Fondo de pagina--------------*/
 body{
@@ -11,8 +15,10 @@ body{
     background: radial-gradient(circle at center, #a69a9a 0%, #ffffff 100%);
     color: rgb(5, 5, 5);
     padding: 50px 0;
-    padding-bottom: 0;
    
+}
+main{
+  flex: 1;
 }
 /*--------------Barra de navegacion--------------*/
 header{
@@ -100,6 +106,7 @@ h1{
 
 /*--------------Pie de pagina--------------*/
 footer{
+    align-items: flex-end;
     background-color: #3b3939;
     text-align: center;
     color: black;
@@ -126,6 +133,7 @@ footer img{
   main form {
     width: 95%;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .logo{
