@@ -30,7 +30,7 @@
                     <ul class="list1">
                         <li>
                             <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" pattern="[a-zA-ZñÑ]{3.15}" required >
+                            <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" pattern="[a-zA-Z ñÑ]{3,40}" required >
                         </li>   
                         <li>
                             <label for="email">Em@il</label>
@@ -38,7 +38,7 @@
                         </li>
                         <li>
                             <label for="telefono">Telefono</label>
-                            <input type="tel" name="telefono" id="telefono" placeholder="Escriba su numero" pattern="\d" required>
+                            <input type="tel" name="telefono" id="telefono" placeholder="Escriba su numero" pattern="[1-9]{7,15}" required>
                         </li> 
                         <li>      
                             <label for="modelo">Elige tu Modelo</label>
