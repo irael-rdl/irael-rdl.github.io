@@ -27,14 +27,10 @@ header{
     padding-bottom: 0px;
     display: flex;
     position: sticky;
- 
-  
 }
 nav{
     margin: 0 auto;
-    justify-content: space-between;
-    
-   
+    justify-content: space-between; 
 }
 nav ul{
     display: flex;
