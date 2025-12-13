@@ -17,7 +17,8 @@ body{
     font: normal 1.1rem/1.5 Verdana;
     background: radial-gradient(circle at center, #a69a9a 0%, #ffffff 100%);
     color: rgb(5, 5, 5);
-    padding: 50px 0;
+    padding-top:50px;
+    
    
    
 }
