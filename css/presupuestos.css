@@ -11,11 +11,14 @@ html, body {
 
 /*--------------Fondo de pagina--------------*/
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font: normal 1.1rem/1.5 Verdana;
     background: radial-gradient(circle at center, #a69a9a 0%, #ffffff 100%);
     color: rgb(5, 5, 5);
-    padding: 50px 0;
-   
+    padding-top: 50px;
+    
 }
 main{
   flex: 1;
@@ -27,7 +30,10 @@ header{
     padding: 15px;
     padding-bottom: 0px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: sticky;
+    width: 100%;
  
   
 }
@@ -110,6 +116,7 @@ footer{
     background-color: #3b3939;
     text-align: center;
     color: black;
+  
 
 }
 footer img{

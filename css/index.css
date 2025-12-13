@@ -10,11 +10,15 @@ html, body {
 
 /*--------------Fondo de pagina--------------*/
 body{
+   display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font: normal 1.1rem/1.5 Verdana;
     background-image: url(../images/fondo.jpg);
     background-repeat: no-repeat;
     background-size: 120%;
     padding: 50px 0;
+    
 }
 main{
   flex: 1;
@@ -26,7 +30,10 @@ header{
     padding: 15px;
     padding-bottom: 0px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: sticky;
+    width: 100%;
 }
 nav{
     margin: 0 auto;
